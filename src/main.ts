@@ -1,7 +1,8 @@
-import * as core from '@actions/core';
+import * as core from "@actions/core";
 
 async function run() {
-  core.setOutput('version', require(process.cwd() + '/package.json').versions)
+  console.log(require(process.cwd() + "/package.json"));
+  core.setOutput("version", require(process.cwd() + "/package.json").versions);
 }
 
 run();
