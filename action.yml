@@ -1,10 +1,8 @@
-name: 'Node 12 Template Action'
-description: 'Get started with Node actions'
-author: 'GitHub'
-inputs:
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+name: 'Get Version'
+description: 'Get Version from package.json'
+outputs:
+  version:
+    description: Versions
 runs:
   using: 'node12'
   main: 'lib/main.js'
